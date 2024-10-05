@@ -70,6 +70,37 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground min-h-screen overflow-x-hidden max-w-[100vw];
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(221.2, 83.2%, 53.3%); /* Thumb color */
+  border-radius: 5px;
+  border: 2px solid #f1f1f1; /* Matches the track background to create padding */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(221.2, 83.2%, 48%);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #2d3748; /* Dark mode track background */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: hsl(221.2, 83.2%, 60%);
+  border: 3px solid #2d3748; /* Dark mode padding between thumb and track */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: hsl(221.2, 83.2%, 65%);
 }

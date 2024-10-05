@@ -23,6 +23,9 @@
       "@/helpers/*": ["./lib/helpers/*"],
       "@/hooks/*": ["./lib/hooks/*"],
       "@/redux/*": ["./lib/redux/*"],
+      "@/providers/*": ["./components/providers/*"],
+      "@/icons/*": ["./components/ui/icons/*"],
+      "@/components/*": ["./components/*"],
       "@/*": ["./*"]
     }
   },
