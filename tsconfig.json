@@ -18,6 +18,11 @@
       }
     ],
     "paths": {
+      "@/types/*": ["./lib/types/*"],
+      "@/firebase/*": ["./lib/firebase/*"],
+      "@/helpers/*": ["./lib/helpers/*"],
+      "@/hooks/*": ["./lib/hooks/*"],
+      "@/redux/*": ["./lib/redux/*"],
       "@/*": ["./*"]
     }
   },
