@@ -11,6 +11,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./lib/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     screens: {
@@ -40,6 +41,9 @@ const config: Config = {
       colors: {
         c1: {
           DEFAULT: "rgba(130, 166, 243, 1)",
+        },
+        c2: {
+          DEFAULT: "rgba(170, 27, 27,1)",
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

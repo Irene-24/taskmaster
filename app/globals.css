@@ -104,3 +104,16 @@
 .dark ::-webkit-scrollbar-thumb:hover {
   background: hsl(221.2, 83.2%, 65%);
 }
+
+.auth input:-webkit-autofill,
+.auth input:-webkit-autofill:hover,
+.auth input:-webkit-autofill:focus,
+.auth input:-webkit-autofill:active {
+  /* Revert text color */
+  -webkit-text-fill-color: #fff !important;
+  color: #fff !important;
+  caret-color: #fff !important;
+
+  /* Revert background color */
+  transition: background-color 5000s ease-in-out 0s;
+}

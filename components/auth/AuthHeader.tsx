@@ -10,11 +10,11 @@ interface Props {
 
 const AuthHeader = ({ title, desc }: Props) => {
   return (
-    <section className="space-y-1.5">
+    <section className="mb-5">
       <Typography className="font-semibold" variant="h6">
         {title}
       </Typography>
-      <FormDescription>{desc}</FormDescription>
+      <FormDescription className="text-white">{desc}</FormDescription>
     </section>
   );
 };

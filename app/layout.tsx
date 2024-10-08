@@ -23,10 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${jakarta.variable} font-sans antialiased`}>
+    <html suppressHydrationWarning lang="en">
+      <body
+        suppressHydrationWarning
+        className={`${jakarta.variable} font-sans antialiased`}
+      >
         <ReduxProvider>{children}</ReduxProvider>
-        <Toaster />
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );
