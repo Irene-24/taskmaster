@@ -24,7 +24,7 @@ const AuthProvider = ({ children }: PropsWithChildren) => {
         setLoading(false);
       } else {
         // GET current route and pass to callvakUrl for login
-        router.push(`/auth/login?callbackUrl=${url}`);
+        // router.push(`/auth/login?callbackUrl=${url}`);
       }
     });
 

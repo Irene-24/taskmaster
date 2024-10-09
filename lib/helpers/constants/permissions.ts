@@ -1,5 +1,7 @@
 // Enum for All Permissions
 export const enum APP_PERMISSIONS {
+  ALL = "all",
+
   // Project Permissions
   EDIT_PROJECT = "edit_project",
   DELETE_PROJECT = "delete_project",
