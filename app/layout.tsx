@@ -1,9 +1,9 @@
-import "./globals.css";
-
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import ReduxProvider from "@/providers/ReduxProvider";
 import { Toaster } from "@/components/ui/sonner";
+
+import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -23,10 +23,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${jakarta.variable} font-sans antialiased`}>
+    <html
+      suppressHydrationWarning
+      lang="en"
+      className={`${jakarta.variable} ${jakarta.className}`}
+    >
+      <body suppressHydrationWarning className={`font-sans  antialiased`}>
         <ReduxProvider>{children}</ReduxProvider>
-        <Toaster />
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );

@@ -7,7 +7,9 @@ import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   darkMode: ["class"],
+
   content: [
+    "./lib/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -40,6 +42,9 @@ const config: Config = {
       colors: {
         c1: {
           DEFAULT: "rgba(130, 166, 243, 1)",
+        },
+        c2: {
+          DEFAULT: "rgba(170, 27, 27,1)",
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -86,6 +91,15 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      zIndex: {
+        headerNav: "10000",
+        sideNav: "10100",
+        overlay: "10500",
+        menu: "10700",
+        toggler: "10800",
+        modal: "10900",
+        notif: "11000",
       },
     },
   },
