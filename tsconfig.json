@@ -20,9 +20,12 @@
     "paths": {
       "@/types/*": ["./lib/types/*"],
       "@/firebase/*": ["./lib/firebase/*"],
-      "@/helpers/*": ["./lib/helpers/*"],
       "@/hooks/*": ["./lib/hooks/*"],
+      "@/services/*": ["./lib/redux/services/*"],
+
       "@/redux/*": ["./lib/redux/*"],
+      "@/constants/*": ["./lib/helpers/constants/*"],
+      "@/helpers/*": ["./lib/helpers/*"],
       "@/providers/*": ["./components/providers/*"],
       "@/icons/*": ["./components/ui/icons/*"],
       "@/components/*": ["./components/*"],
@@ -30,5 +33,5 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["cypress.config.ts", "cypress", "node_modules"]
 }
