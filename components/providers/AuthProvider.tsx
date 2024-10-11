@@ -18,13 +18,14 @@ const AuthProvider = ({ children }: PropsWithChildren) => {
 
   useLayoutEffect(() => {
     setLoading(true);
+
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         triggerGetAppUserProfile(user.uid);
         setLoading(false);
       } else {
         // GET current route and pass to callvakUrl for login
-        // router.push(`/auth/login?callbackUrl=${url}`);
+        router.push(`/auth/login?callbackUrl=${url}`);
       }
     });
 

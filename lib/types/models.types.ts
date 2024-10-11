@@ -56,5 +56,6 @@ export interface Project {
   roles: ProjectRoles;
   createdBy: string;
   createdAt: string;
+  updatedAt: number;
   isDeleted: boolean;
 }
